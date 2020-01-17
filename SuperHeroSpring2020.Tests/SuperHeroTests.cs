@@ -15,7 +15,21 @@ namespace SuperHeroSpring2020.Tests
             // Act
 
             // Assert 
-            Assert.Equal(false, mySuper.hasCape);
+            Assert.False(mySuper.HasCape);
+        }
+
+        [Fact]
+        public void IncreaseSpeed_Increases_SuperHero_Speed_By_10()
+        {
+            // Arrange
+            SuperHero mySuper = new SuperHero();
+            mySuper.Speed = 100;  // initial test value
+
+            // Act
+            mySuper.IncreaseSpeed(10);
+
+            // Assert
+            Assert.Equal(110, mySuper.Speed);
         }
     }
 }
