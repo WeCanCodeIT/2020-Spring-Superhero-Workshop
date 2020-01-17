@@ -6,28 +6,16 @@ namespace SuperHeroSpring2020.Tests
     public class SuperHeroTests
     {
         [Fact]
-        public void New_Superhero_Has_No_Cape()
+        public void New_SuperHero_hasCape_is_false()
         {
             // Arrange
-            SuperHero superHero = new SuperHero();
-
-            // Assert
-
+            // type objectName = new classConstructor();
+            SuperHero mySuper = new SuperHero();
 
             // Act
-            Assert.Equal(false, superHero.hasCape);
-        }
 
-        [Fact]
-        public void New_Superhero_Has_StrengthLevel_10()
-        {
-
-        }
-
-        [Fact]
-        public void New_SuperHero_Cannot_Fly()
-        {
-
+            // Assert 
+            Assert.Equal(false, mySuper.hasCape);
         }
     }
 }
