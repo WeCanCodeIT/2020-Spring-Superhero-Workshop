@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperHeroSpring2020", "SuperHeroSpring2020\SuperHeroSpring2020.csproj", "{12F72753-525B-43F3-BB20-FB9A44041C7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperHeroSpring2020.Tests", "SuperHeroSpring2020.Tests\SuperHeroSpring2020.Tests.csproj", "{B73F95F7-31A3-4426-AE89-5FFCF1F2872B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12F72753-525B-43F3-BB20-FB9A44041C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F72753-525B-43F3-BB20-FB9A44041C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F72753-525B-43F3-BB20-FB9A44041C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F72753-525B-43F3-BB20-FB9A44041C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B73F95F7-31A3-4426-AE89-5FFCF1F2872B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B73F95F7-31A3-4426-AE89-5FFCF1F2872B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B73F95F7-31A3-4426-AE89-5FFCF1F2872B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B73F95F7-31A3-4426-AE89-5FFCF1F2872B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B37628AF-9621-4C84-BA0C-5009F7D6F150}
+	EndGlobalSection
+EndGlobal
