@@ -18,15 +18,23 @@ namespace SuperHeroSpring2020
 
         public bool HasCape { get; set; }
         public int Speed { get; set; }
+        public string Name { get; set; }
 
         public SuperHero()
         {
             HasCape = false;
+            Speed = 0;
+            Name = "SuperHero";
         }
 
         public void IncreaseSpeed(int userSpeed)
         {
             Speed += userSpeed;
+        }
+
+        public void AssignName(string name)
+        {
+            Name = name;
         }
     }
 }
