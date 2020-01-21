@@ -31,5 +31,19 @@ namespace SuperHeroSpring2020.Tests
             // Assert
             Assert.Equal(110, mySuper.Speed);
         }
+
+        [Fact]
+        public void Can_AssignName_To_SuperHero()
+        {
+            // Arrange
+            SuperHero mySuper = new SuperHero();
+            string name = "Chad";
+
+            // Act
+            mySuper.AssignName(name);
+
+            // Assert
+            Assert.Equal("Chad", mySuper.Name);
+        }
     }
 }
