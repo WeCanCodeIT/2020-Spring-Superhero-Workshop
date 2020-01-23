@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SuperHeroSpring2020
 {
@@ -7,6 +8,8 @@ namespace SuperHeroSpring2020
         static void Main(string[] args)
         {
             SuperHero superman = new SuperHero();
+            // List<string> superPowers = new List<string>();
+            string[] superPowers = new string[3];
             bool playing = true;
 
             Console.WriteLine("You have a new SuperHero");
@@ -37,7 +40,12 @@ namespace SuperHeroSpring2020
                     case ("2"):
                         Console.WriteLine($"SuperHero Name: {superman.Name}");
                         Console.WriteLine($"SuperHero has cape: {superman.HasCape}");
-                        Console.WriteLine("I don't know anything about your Super Powers");
+                        // Console.WriteLine("I don't know anything about your Super Powers");
+                        Console.WriteLine("Your SuperHero has these powers: ");
+                        foreach(string power in superPowers)
+                        {
+                            Console.WriteLine(power);
+                        }
                         break;
                     case ("3"):
                         Console.WriteLine($"SuperHero Speed: {superman.Speed}");
@@ -49,8 +57,18 @@ namespace SuperHeroSpring2020
                         Console.WriteLine($"{superman.Name} is now going {superman.Speed} mph!");
                         break;
                     case ("5"):
-                        Console.WriteLine("Tell me what Super Power you would like to add: ");
+                        Console.WriteLine("Tell me what Super Power you would like to add (no more than 3): ");
                         string newPower = Console.ReadLine();
+                        for(int i = 0; i<superPowers.Length; i++)
+                        {
+                            if(superPowers[i] == null)
+                            {
+                                superPowers[i] = newPower;
+                                i = superPowers.Length;
+                            }
+                        }
+                        // Console.WriteLine(superPowers);
+                        // superPowers.Add(newPower);
                         break;
                     case ("6"):
                         playing = false;
