@@ -19,7 +19,8 @@ namespace SuperHeroSpring2020
                 Console.WriteLine("2. View SuperHero info");
                 Console.WriteLine("3. View SuperHero status");
                 Console.WriteLine("4. Make your SuperHero go faster");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. Add more Super Powers");
+                Console.WriteLine("6. Exit");
 
                 Console.Write("\nPlease enter a number: ");
                 string userChoice = Console.ReadLine();
@@ -36,6 +37,7 @@ namespace SuperHeroSpring2020
                     case ("2"):
                         Console.WriteLine($"SuperHero Name: {superman.Name}");
                         Console.WriteLine($"SuperHero has cape: {superman.HasCape}");
+                        Console.WriteLine("I don't know anything about your Super Powers");
                         break;
                     case ("3"):
                         Console.WriteLine($"SuperHero Speed: {superman.Speed}");
@@ -47,6 +49,10 @@ namespace SuperHeroSpring2020
                         Console.WriteLine($"{superman.Name} is now going {superman.Speed} mph!");
                         break;
                     case ("5"):
+                        Console.WriteLine("Tell me what Super Power you would like to add: ");
+                        string newPower = Console.ReadLine();
+                        break;
+                    case ("6"):
                         playing = false;
                         Console.WriteLine("Good bye!");
                         break;
