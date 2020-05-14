@@ -6,39 +6,62 @@ namespace SuperHeroSpring2020
 {
     public class SuperHero
     {
-        // private backing field
-        // private bool hasCape;
+        // Fields
+        //private bool hasCape;
+        //private int speed;
+        //private string name;
 
-        // getters and setters
+        // Property Declaration using Getter and Setter Methods on the Private Fields
         //public bool HasCape
         //{
-        //    get { return this.hasCape; } //returns the value
-        //    set { this.hasCape = value; } //sets the value
+        //    get { return this.hasCape; }
+        //    set { this.hasCape = value; }
         //}
 
+        //public int Speed
+        //{
+        //    get { return this.speed; }
+        //    set { this.speed = value; }
+        //}
+
+        //public string Name
+        //{
+        //    get { return this.name; }
+        //    set { this.name = value; }
+        //}
+
+        // CLASS PROPERTIES
+        // Or....Shorthand Property Declaration
         public bool HasCape { get; set; }
         public int Speed { get; set; }
         public string Name { get; set; }
 
+        // CLASS CONSTRUCTORS
+        // This is the default constructor
+        //public SuperHero()
+        //{
+
+        //}
+
         public SuperHero()
         {
-            HasCape = false;
-            Name = "your SuperHero";
+            Name = "My New SuperHero";
         }
 
-        public SuperHero(string Name, string Type)
+        // CLASS METHODS
+        public void AssignName(string nameThatWasPassedIn)
         {
-
+            Name = nameThatWasPassedIn;
         }
 
-        public void IncreaseSpeed(int userSpeed)
+        public void IncreaseSpeed(int increaseInSpeed)
         {
-            Speed += userSpeed;
+            Speed = Speed + increaseInSpeed;
         }
 
-        public void AssignName(string name)
+        public string GreetSuperHero()
         {
-            Name = name;
+            return "Hello, my favorite fan!";
         }
     }
 }
