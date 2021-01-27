@@ -6,39 +6,54 @@ namespace SuperHeroSpring2020
 {
     public class SuperHero
     {
-        // private backing field
-        // private bool hasCape;
+        // constructors
 
-        // getters and setters
-        //public bool HasCape
-        //{
-        //    get { return this.hasCape; } //returns the value
-        //    set { this.hasCape = value; } //sets the value
-        //}
+        // private bool HasCostume;
 
-        public bool HasCape { get; set; }
-        public int Speed { get; set; }
+
+
+        // Properties
+
+        // get {return this.hasCostume;} returns the value
+        // set {this.hasCostume = value} sets the value 
+        public bool HasCostume { get; set; }
+        public string SuperPower { get; set; }
         public string Name { get; set; }
+        public string SideKick { get; set; }
+        public int NumberOfSideKicks { get; set; }
+        public string Location { get; set; }
+        public string Transportation { get; set; }
 
-        public SuperHero()
+
+        public SuperHero(bool hasCostume, string superPower, string name, string sideKick, int numberOfSideKicks, string location, string transportation)
         {
-            HasCape = false;
-            Name = "your SuperHero";
+            HasCostume = hasCostume;
+            SuperPower = superPower;
+            Name = name;
+            SideKick = sideKick;
+            NumberOfSideKicks = numberOfSideKicks;
+            Location = location;
+            Transportation = transportation;
+
         }
 
-        public SuperHero(string Name, string Type)
-        {
 
-        }
-
-        public void IncreaseSpeed(int userSpeed)
-        {
-            Speed += userSpeed;
-        }
+        // Methods
 
         public void AssignName(string name)
         {
-            Name = name;
         }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
 }
