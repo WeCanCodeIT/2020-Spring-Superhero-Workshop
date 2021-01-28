@@ -25,17 +25,23 @@ namespace SuperHeroSpring2020
         public string Transportation { get; set; }
 
 
-        public SuperHero(bool hasCostume, string superPower, string name, string sideKick, int numberOfSideKicks, string location, string transportation)
-        {
-            HasCostume = hasCostume;
-            SuperPower = superPower;
-            Name = name;
-            SideKick = sideKick;
-            NumberOfSideKicks = numberOfSideKicks;
-            Location = location;
-            Transportation = transportation;
+        //public SuperHero(bool hasCostume, string superPower, string name, string sideKick, int numberOfSideKicks, string location, string transportation)
+        //{
+        //    HasCostume = hasCostume;
+        //    SuperPower = superPower;
+        //    Name = name;
+        //    SideKick = sideKick;
+        //    NumberOfSideKicks = numberOfSideKicks;
+        //    Location = location;
+        //    Transportation = transportation;
 
+        //}
+
+        public SuperHero(string name)
+        {
+            Name = name;
         }
+
 
 
         // Methods
